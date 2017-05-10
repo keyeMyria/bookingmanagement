@@ -42,7 +42,7 @@
     </md-menu>
   </md-toolbar>
 
-  <md-sidenav-layout class="app-inner">
+  <mat-sidenav-container class="app-inner">
     <md-sidenav #sidemenu class="sidebar-panel" [mode]="isOver() ? 'over' : 'side'" [opened]="!isOver()">
       <md-nav-list class="navigation accordion">
         <md-list-item class="accordion-link" *ngFor="let menuitem of menuItems.getAll()" group="{{menuitem.state}}">
@@ -219,7 +219,7 @@
       </md-tab-group>
     </md-sidenav>
     <router-outlet></router-outlet>
-  </md-sidenav-layout>
+  </mat-sidenav-containersidenav-layout>
 
   <!-- Demo Purposes Only -->
   <button md-fab color="warn" class="md-fab-bottom-right" (click)="showSettings = true">

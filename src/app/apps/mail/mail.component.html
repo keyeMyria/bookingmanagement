@@ -1,4 +1,4 @@
-<md-sidenav-layout class="app-inner background-none shadow-none">
+<mat-sidenav-container class="app-inner background-none shadow-none">
   <md-sidenav #mailnav [mode]="isOver() ? 'over' : 'side'" [opened]="!isOver()" class="pl-xs pr-xs">
     <md-nav-list class="messages-nav">
       <a href="javascript:;" md-list-item>
@@ -119,7 +119,7 @@
       </div>
     </div>
   </div>
-</md-sidenav-layout>
+</mat-sidenav-container>
 
 <button md-fab color="warn" class="md-fab-bottom-right">
   <md-icon class="md-24">create</md-icon>
