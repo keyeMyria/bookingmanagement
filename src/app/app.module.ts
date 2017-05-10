@@ -6,7 +6,7 @@ import { HttpModule, Http} from '@angular/http';
 
 
 import { TranslateModule, TranslateLoader, TranslateStaticLoader } from 'ng2-translate/ng2-translate';
-import { MaterialModule } from '@angular/material';
+import { MaterialRootModule, NoConflictStyleCompatibilityMode } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppRoutes } from './app.routing';
@@ -41,7 +41,10 @@ export function createTranslateLoader(http: Http) {
       useFactory: (createTranslateLoader),
       deps: [Http]
     }),
-    MaterialModule.forRoot(),
+
+    // MaterialModule,
+    MaterialRootModule,
+    NoConflictStyleCompatibilityMode,
     FlexLayoutModule,
 
     SharedModule,

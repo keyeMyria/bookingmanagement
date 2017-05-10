@@ -1,8 +1,8 @@
 <div class="session md-indigo">
   <div class="session-content">
     <div class="session-wrapper">
-      <md-card>
-        <md-card-content>
+      <mat-card>
+        <mat-card-content>
           <form [formGroup]="form" (ngSubmit)="onSubmit()">
             <div class="text-xs-center pb-1">
               <img src="assets/images/logo-dark.png" alt=""/>
@@ -10,15 +10,19 @@
             </div>
             <div fxLayout="column"  fxLayoutAlign="space-around">
               <div class="pb-1">
-                <md-input placeholder="Username" [formControl]="form.controls['uname']" style="width: 100%"></md-input>
-                <small *ngIf="form.controls['uname'].hasError('required') && form.controls['uname'].touched" class="md-text-warn">Username is required.</small>
+                <mat-input-container>
+                  <input placeholder="Username" [formControl]="form.controls['uname']" style="width: 100%"/>
+                  <small *ngIf="form.controls['uname'].hasError('required') && form.controls['uname'].touched" class="md-text-warn">Username is required.</small>
+                </mat-input-container>
               </div>
               <div class="pb-1">
-                <md-input type="password" placeholder="Password" [formControl]="form.controls['password']" style="width: 100%"></md-input>
-                <small *ngIf="form.controls['password'].hasError('required') && form.controls['password'].touched" class="md-text-warn">Password is required.</small>
+                <mat-input-container>
+                  <input type="password" placeholder="Password" [formControl]="form.controls['password']" style="width: 100%"/>
+                  <small *ngIf="form.controls['password'].hasError('required') && form.controls['password'].touched" class="md-text-warn">Password is required.</small>
+                </mat-input-container>
               </div>
               <div class="pb-1">
-                <md-checkbox>Stay logged in</md-checkbox>
+                <mat-checkbox>Stay logged in</mat-checkbox>
               </div>
               <button md-raised-button color="primary" type="submit" [disabled]="!form.valid">Login</button>
             </div>
@@ -27,8 +31,8 @@
               <a [routerLink]="['/session/signup']">Sign up for a new account.</a>
             </div>
           </form>
-        </md-card-content>
-      </md-card>
+        </mat-card-content>
+      </mat-card>
     </div>
   </div>
 </div>

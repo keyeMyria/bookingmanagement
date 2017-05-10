@@ -37,7 +37,9 @@ export class DialogComponent {
   selector: 'demo-jazz-dialog',
   template: `
   <h5 class="mt-0">Maecenas faucibus mollis interdum.</h5>
-  <md-input placeholder="How much?" #howMuch type="number" style="width: 100%;"></md-input>
+  <mat-input-container>
+    <input placeholder="How much?" #howMuch type="number" style="width: 100%;"/>
+  </mat-input-container>
   <p> {{ jazzMessage }} </p>
   <button md-button type="button" (click)="dialogRef.close(howMuch.value)">Close dialog</button>`
 })
