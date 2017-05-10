@@ -1,10 +1,10 @@
-.md-select-panel {
+.mat-select-panel {
 	background-color: mat-color($background, card);
 }
-md-option {
+mat-option {
     font-size: $font-size-base!important;
 }
 
-.app-dark .md-select-panel {
+.app-dark .mat-select-panel {
 	background-color: mat-color($dark-background, card);
 }

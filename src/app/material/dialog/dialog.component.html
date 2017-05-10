@@ -2,19 +2,19 @@
   <mat-card-title>Dialog</mat-card-title>
   <mat-card-subtitle>MdDialog is a service, which opens dialogs components in the view.</mat-card-subtitle>
   <mat-card-content>
-    <button md-raised-button color="primary" (click)="open()" [disabled]="dialogRef">Open dialog</button>
+    <button mat-raised-button color="primary" (click)="open()" [disabled]="dialogRef">Open dialog</button>
 
     <p>Dialog dimensions</p>
-    <mat-input [(ngModel)]="config.width" placeholder="Width"></mat-input>
-    <mat-input [(ngModel)]="config.height" placeholder="Height"></mat-input>
+    <input [(ngModel)]="config.width" placeholder="Width"/>
+    <input [(ngModel)]="config.height" placeholder="Height"/>
 
     <p>Dialog position</p>
 
-    <mat-input [(ngModel)]="config.position.top" (change)="config.position.bottom = ''" placeholder="Top"></mat-input>
-    <mat-input [(ngModel)]="config.position.bottom" (change)="config.position.top = ''" placeholder="Bottom"></mat-input>
+    <input [(ngModel)]="config.position.top" (change)="config.position.bottom = ''" placeholder="Top"/>
+    <input [(ngModel)]="config.position.bottom" (change)="config.position.top = ''" placeholder="Bottom"/>
 
-    <mat-input [(ngModel)]="config.position.left" (change)="config.position.right = ''" placeholder="Left"></mat-input>
-    <mat-input [(ngModel)]="config.position.right" (change)="config.position.left = ''" placeholder="Right"></mat-input>
+    <input [(ngModel)]="config.position.left" (change)="config.position.right = ''" placeholder="Left"/>
+    <input [(ngModel)]="config.position.right" (change)="config.position.left = ''" placeholder="Right"/>
 
     <p>Other options</p>
     <mat-checkbox [(ngModel)]="config.disableClose">Disable close</mat-checkbox>

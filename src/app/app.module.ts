@@ -3,7 +3,7 @@ import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule, Http} from '@angular/http';
-
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 import { TranslateModule, TranslateLoader, TranslateStaticLoader } from 'ng2-translate/ng2-translate';
 import { MaterialRootModule, NoConflictStyleCompatibilityMode } from '@angular/material';
@@ -33,6 +33,8 @@ export function createTranslateLoader(http: Http) {
     BrowserModule,
     FormsModule,
     HttpModule,
+
+    NoopAnimationsModule,
 
     RouterModule.forRoot(AppRoutes),
 

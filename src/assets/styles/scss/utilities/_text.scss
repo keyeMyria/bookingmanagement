@@ -41,17 +41,17 @@
 
 // Contextual colors
 
-@include text-emphasis-variant('.md-text-muted', mat-color($foreground, secondary-text));
+@include text-emphasis-variant('.mat-text-muted', mat-color($foreground, secondary-text));
 
-@include text-emphasis-variant('.md-text-default', mat-color($foreground, base));
+@include text-emphasis-variant('.mat-text-default', mat-color($foreground, base));
 
-@include text-emphasis-variant('.md-text-primary', mat-color($primary));
+@include text-emphasis-variant('.mat-text-primary', mat-color($primary));
 
-@include text-emphasis-variant('.md-text-warn', mat-color($warn));
+@include text-emphasis-variant('.mat-text-warn', mat-color($warn));
 
-@include text-emphasis-variant('.md-text-accent', mat-color($accent));
+@include text-emphasis-variant('.mat-text-accent', mat-color($accent));
 
 .app-dark {
-	@include text-emphasis-variant('.md-text-muted', mat-color($dark-foreground, secondary-text));
-	@include text-emphasis-variant('.md-text-default', mat-color($dark-foreground, base));
+	@include text-emphasis-variant('.mat-text-muted', mat-color($dark-foreground, secondary-text));
+	@include text-emphasis-variant('.mat-text-default', mat-color($dark-foreground, base));
 }

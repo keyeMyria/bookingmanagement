@@ -1,13 +1,13 @@
 /* $sidebar-panel
  ------------------------------------------*/
-md-sidenav.sidebar-panel {
+mat-sidenav.sidebar-panel {
   overflow-x: hidden;
   width: $sidebar-width;
   box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12)!important;
   > nav {
     min-width: $sidebar-width;
   }
-  md-list-item .md-list-item {
+  mat-list-item .mat-list-item {
     display: block;
     height: auto;
     max-height: 48px;
@@ -17,17 +17,17 @@ md-sidenav.sidebar-panel {
     -moz-transition: max-height .3s cubic-bezier(.35, 0, .25, 1);
     transition: max-height .3s cubic-bezier(.35, 0, .25, 1);
   }
-  md-list-item {
+  mat-list-item {
     background-color: transparent;
     -webkit-transition: background-color .3s cubic-bezier(.35, 0, .25, 1);
     -moz-transition: background-color .3s cubic-bezier(.35, 0, .25, 1);
     transition: background-color .3s cubic-bezier(.35, 0, .25, 1);
   }
-  md-list-item.open > .md-list-item {
+  mat-list-item.open > .mat-list-item {
     max-height: 1000px;
     background: mat-color($background, 'hover');
   }
-  md-nav-list a {
+  mat-nav-list a {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -62,7 +62,7 @@ md-sidenav.sidebar-panel {
   }
 
   .navigation {
-    md-icon:not(.menu-caret) {
+    mat-icon:not(.menu-caret) {
       @include margin-right(24px);
     }
     .menu-caret {
@@ -75,7 +75,7 @@ md-sidenav.sidebar-panel {
       @include margin-left(.3125rem);
       text-align: center;
     }
-    .open > .md-list-item > .accordion-toggle > .menu-caret {
+    .open > .mat-list-item > .accordion-toggle > .menu-caret {
       @include rotate(-180deg);
     }
     .menu-badge {
@@ -89,14 +89,14 @@ md-sidenav.sidebar-panel {
       font-weight: 700;
       padding: 0 4px;
     }
-    .open > .md-list-item > .sub-menu {
+    .open > .mat-list-item > .sub-menu {
       max-height: 1000px;
     }
   }
 }
 
 [dir="rtl"] {
-  md-sidenav.sidebar-panel {
+  mat-sidenav.sidebar-panel {
     .sub-menu a{
       @include padding-right(64px);
       @include padding-left(16px);
@@ -118,7 +118,7 @@ md-sidenav.sidebar-panel {
     }
 
     .navigation {
-      md-icon:not(.menu-caret) {
+      mat-icon:not(.menu-caret) {
         @include margin-left(24px);
         @include margin-right(0);
       }

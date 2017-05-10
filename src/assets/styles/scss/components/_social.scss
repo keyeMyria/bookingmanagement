@@ -4,7 +4,7 @@
 @import "../mixins";
 
 :host /deep/ {
-md-list.profile-list md-list-item .md-list-item {
+mat-list.profile-list mat-list-item .mat-list-item {
   padding: 0!important;
   font-size: 13px!important;
 }
@@ -31,10 +31,10 @@ md-list.profile-list md-list-item .md-list-item {
     width: 1px;
     background-color: mat-color($foreground, divider);
   }
-  md-card {
+  mat-card {
     background-color: transparent;
   }
-  md-card-content {
+  mat-card-content {
     padding-top: 0;
     padding-left: 78px;
   }
@@ -49,7 +49,7 @@ md-list.profile-list md-list-item .md-list-item {
       left: auto;
       right: 42px;
     }
-    md-card-content {
+    mat-card-content {
       padding-left: o;
       padding-right: 78px;
     }

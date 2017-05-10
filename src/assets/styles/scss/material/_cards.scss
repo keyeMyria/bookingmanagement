@@ -1,13 +1,13 @@
 /* $cards
  ------------------------------------------*/
 body {
-  md-card {
+  mat-card {
     padding: 0;
     margin: ($gutter/3);
     border-radius: $border-radius-base;
     @include mat-elevation(1);
     color: rgba(mat-color($foreground, base), 0.87);
-    md-card-header {
+    mat-card-header {
       height: auto;
     }
     > :first-child {
@@ -16,20 +16,20 @@ body {
     > :last-child {
       border-radius: 0 0 $border-radius-base $border-radius-base;
     }
-    [md-card-avatar] {
+    [mat-card-avatar] {
       font-size: 40px;
       line-height: 40px;
       margin: $gutter 0 0 $gutter;
     }
-    [md-card-image] {
+    [mat-card-image] {
       width: 100%;
       margin: 0;
     }
-    [md-card-image]:first-child {
+    [mat-card-image]:first-child {
       margin-top: 0;
       border-radius: $border-radius-base $border-radius-base 0 0;
     }
-    md-card-title {
+    mat-card-title {
       padding-top: $gutter;
       padding-left: $gutter;
       padding-right: $gutter;
@@ -37,35 +37,35 @@ body {
       font-size: 16px;
       font-weight: 400;
     }
-    md-card-subtitle {
+    mat-card-subtitle {
       padding-left: $gutter;
       padding-right: $gutter;
       line-height: 1;
       font-size: 13px;
     }
-    md-card-subtitle:first-child {
+    mat-card-subtitle:first-child {
       padding-top: $gutter;
     }
-    md-card-title:nth-child(2) {
+    mat-card-title:nth-child(2) {
       margin-top: -24px;
     }
-    md-card-content {
+    mat-card-content {
       padding: $gutter;
       margin-bottom: 0;
       position: relative;
     }
-    [md-fab-card-float] {
+    [mat-fab-card-float] {
       top: -36px;
       position: absolute;
       right: 8px;
     }
-    &, & .md-card {
-      & md-card-actions:last-child {
+    &, & .mat-card {
+      & mat-card-actions:last-child {
         padding: $gutter / 2;
         margin: 0;
       }
     }
-    [md-card-float-icon] {
+    [mat-card-float-icon] {
       position: absolute;
       right: 15px;
       top: 50%;
@@ -78,7 +78,7 @@ body {
         transform: rotate(-5deg);
       }
     }
-    [md-card-widget] {
+    [mat-card-widget] {
       height: auto;
       display: flex;
       flex-direction: row;
@@ -90,7 +90,7 @@ body {
       align-content: center;
       max-width: 100%;
       padding: $gutter;
-      [md-card-widget-title], p {
+      [mat-card-widget-title], p {
         margin: 0;
         padding: 0;
       }
@@ -114,15 +114,15 @@ body {
 }
 
 body [dir="rtl"] {
-  md-card {
-    [md-card-avatar] {
+  mat-card {
+    [mat-card-avatar] {
       margin: $gutter $gutter 0 0;
     }
-    [md-fab-card-float] {
+    [mat-fab-card-float] {
       right: auto;
       left: 8px;
     }
-    [md-card-float-icon] {
+    [mat-card-float-icon] {
       right: auto;
       left: 15px;
     }

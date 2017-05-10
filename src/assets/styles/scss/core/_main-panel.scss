@@ -1,32 +1,32 @@
 /* $main-panel
  ------------------------------------------*/
-$md-toolbar-height-desktop: 64px !default;
-$md-toolbar-height-mobile-portrait: 56px !default;
-$md-toolbar-height-mobile-landscape: 48px !default;
+$mat-toolbar-height-desktop: 64px !default;
+$mat-toolbar-height-mobile-portrait: 56px !default;
+$mat-toolbar-height-mobile-landscape: 48px !default;
 
 .app-inner {
   position: relative;
   width: 100%;
   max-width: 100%;
-  height: calc(100vh - #{$md-toolbar-height-desktop});
+  height: calc(100vh - #{$mat-toolbar-height-desktop});
   @include flexbox;
   @include flex-direction(row);
 }
 
 @media ($mat-xsmall) and (orientation: portrait) {
   .app-inner {
-    height: calc(100vh - #{$md-toolbar-height-mobile-portrait});
+    height: calc(100vh - #{$mat-toolbar-height-mobile-portrait});
   }
 }
 
 // Specific height for mobile devices in landscape mode.
 @media ($mat-small) and (orientation: landscape) {
   .app-inner {
-    height: calc(100vh - #{$md-toolbar-height-mobile-landscape});
+    height: calc(100vh - #{$mat-toolbar-height-mobile-landscape});
   }
 }
 
-.md-sidenav-content {
+.mat-sidenav-content {
   min-height: 100%;
   //background: $main-panel-bg;
   box-sizing: border-box;
@@ -50,6 +50,6 @@ $md-toolbar-height-mobile-landscape: 48px !default;
   }
 }
 
-.app-dark .md-sidenav-content {
+.app-dark .mat-sidenav-content {
   background-color: rgba(53, 53, 53, 1.00);
 }

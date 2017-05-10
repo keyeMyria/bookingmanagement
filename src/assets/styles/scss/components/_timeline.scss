@@ -52,7 +52,7 @@
     position: relative;
     @include margin-left(30px);
     @include clearfix();
-    > md-card {
+    > mat-card {
       @include float(left);
       display: inline-block;
       margin: 0;
@@ -62,7 +62,7 @@
     display: inline-block;
     padding: 4px 0 10px;
   }
-  .timeline-content > md-card::before {
+  .timeline-content > mat-card::before {
     position: absolute;
     top: 11px;
     width: 0;
@@ -74,7 +74,7 @@
     @include right(100%);
     @include border-color(transparent, rgba(150, 150, 150, .2), transparent, transparent);
   }
-  .timeline-content > md-card::after {
+  .timeline-content > mat-card::after {
     position: absolute;
     top: 12px;
     width: 0;
@@ -100,16 +100,16 @@
     .timeline-card:nth-child(even) .timeline-content {
       @include float(left);
     }
-    .timeline-card:nth-child(even) .timeline-content > md-card {
+    .timeline-card:nth-child(even) .timeline-content > mat-card {
       @include float(right);
     }
-    .timeline-card:nth-child(even) .timeline-content > md-card::before {
+    .timeline-card:nth-child(even) .timeline-content > mat-card::before {
       position: absolute;
       @include right(auto);
       @include left(100%);
       @include border-color(transparent, transparent, transparent, rgba(150, 150, 150, .2));
     }
-    .timeline-card:nth-child(even) .timeline-content > md-card::after {
+    .timeline-card:nth-child(even) .timeline-content > mat-card::after {
       position: absolute;
       @include right(auto);
       @include left(100%);
@@ -139,7 +139,7 @@
     @include left(112%);
   }
   .timeline.stacked {
-    .timeline-content > md-card {
+    .timeline-content > mat-card {
       margin-bottom: 0;
     }
     .timeline-date {
@@ -156,10 +156,10 @@
     .timeline-content {
       margin-left: 30px;
     }
-    .timeline-content > md-card {
+    .timeline-content > mat-card {
       @include float(left);
     }
-    .timeline-content > md-card {
+    .timeline-content > mat-card {
       margin-bottom: 0;
     }
     .timeline-date {
@@ -182,7 +182,7 @@
       @include right(0);
     }
     .timeline-content {
-      > md-card {
+      > mat-card {
         @include float(right!important);
       }
     }
@@ -194,12 +194,12 @@
       .timeline-content .timeline-date {
         text-align: right;
       }
-      .timeline-content > md-card::before {
+      .timeline-content > mat-card::before {
         @include right(auto);
         @include left(100%);
         @include border-color(transparent, transparent, transparent, rgba(150, 150, 150, .2));
       }
-      .timeline-content > md-card::after {
+      .timeline-content > mat-card::after {
         @include right(auto);
         @include left(100%);
         @include border-color(transparent, transparent, transparent, mat-color($background, card));
@@ -245,12 +245,12 @@
       .timeline-content .timeline-date {
         text-align: right;
       }
-      .timeline-content > md-card::before {
+      .timeline-content > mat-card::before {
         @include right(auto!important);
         @include left(100%!important);
         @include border-color(transparent, transparent, transparent, rgba(150, 150, 150, .2)!important);
       }
-      .timeline-content > md-card::after {
+      .timeline-content > mat-card::after {
         @include right(auto!important);
         @include left(100%!important);
         @include border-color(transparent, transparent, transparent, mat-color($background, card)!important);
@@ -269,19 +269,19 @@
         background: mat-color($dark-background, card);
       }
     }
-    .timeline-content > md-card::before {
+    .timeline-content > mat-card::before {
       @include border-color(transparent, mat-color($dark-background, card), transparent, transparent!important);
     }
-    .timeline-content > md-card::after {
+    .timeline-content > mat-card::after {
       @include border-color(transparent, mat-color($dark-background, card), transparent, transparent!important);
     }
   }
   @include media-breakpoint-up(lg) {
     .timeline:not(.stacked) {
-      .timeline-card:nth-child(even) .timeline-content > md-card::before {
+      .timeline-card:nth-child(even) .timeline-content > mat-card::before {
         @include border-color(transparent, transparent, transparent, mat-color($dark-background, card)!important);
       }
-      .timeline-card:nth-child(even) .timeline-content > md-card::after {
+      .timeline-card:nth-child(even) .timeline-content > mat-card::after {
         @include border-color(transparent, transparent, transparent, mat-color($dark-background, card)!important);
       }
     }
@@ -291,20 +291,20 @@
 .app-dark[dir="rtl"] :host /deep/ {
   .timeline {
     &.stacked {
-      .timeline-content > md-card::before {
+      .timeline-content > mat-card::before {
         @include border-color(transparent, transparent, transparent, rgba(150, 150, 150, .2)!important);
       }
-      .timeline-content > md-card::after {
+      .timeline-content > mat-card::after {
         @include border-color(transparent, transparent, transparent, mat-color($dark-background, card)!important);
       }
     }
   }
   @include media-breakpoint-down(md) {
     .timeline {
-      .timeline-content > md-card::before {
+      .timeline-content > mat-card::before {
         @include border-color(transparent, transparent, transparent, rgba(150, 150, 150, .2)!important);
       }
-      .timeline-content > md-card::after {
+      .timeline-content > mat-card::after {
         @include border-color(transparent, transparent, transparent, mat-color($dark-background, card)!important);
       }
     }

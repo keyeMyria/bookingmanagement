@@ -41,7 +41,7 @@ export class DialogComponent {
     <input placeholder="How much?" #howMuch type="number" style="width: 100%;"/>
   </mat-input-container>
   <p> {{ jazzMessage }} </p>
-  <button md-button type="button" (click)="dialogRef.close(howMuch.value)">Close dialog</button>`
+  <button mat-button type="button" (click)="dialogRef.close(howMuch.value)">Close dialog</button>`
 })
 export class JazzDialog {
   jazzMessage = 'Jazzy jazz jazz';

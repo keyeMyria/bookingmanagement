@@ -32,7 +32,7 @@
   .accordion-link.open .message-content {
     max-height: 1000px;
   }
-  .accordion-link.open .md-list-item {
+  .accordion-link.open .mat-list-item {
     padding: 0.8rem 2rem;
   }
   .accordion-link:not(.open) {
@@ -47,18 +47,18 @@
     }
   }
   .messages-nav {
-    md-icon {
+    mat-icon {
       margin-right: 16px;
     }
   }
-  .messages-list .md-list-item {
+  .messages-list .mat-list-item {
     display: block!important;
     height: auto;
     padding: 0.8rem $gutter;
   }
   .messages-list {
     position: relative;
-    md-list-item {
+    mat-list-item {
       box-shadow: 0 0 0 1px rgba(0,0,0,.05),0 1px 1px rgba(0,0,0,.05)!important;
       background-color: #fff;
       display: block;
@@ -67,7 +67,7 @@
 }
 .app-dark :host /deep/ {
   .messages-list {
-    md-list-item {
+    mat-list-item {
       background: mat-color($dark-background, card);
       color: mat-color($dark-foreground, base);
     }
@@ -75,7 +75,7 @@
 }
 [dir="rtl"] :host /deep/ {
   .messages-nav {
-    md-icon {
+    mat-icon {
       margin-right: 0;
       margin-left: 16px;
     }
