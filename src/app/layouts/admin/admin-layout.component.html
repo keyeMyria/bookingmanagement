@@ -43,10 +43,10 @@
     </mat-menu>
   </mat-toolbar>
 
-  <mat-sidenav-container class="app-inner">
-    <mat-sidenav #sidemenu class="sidebar-panel" [mode]="isOver() ? 'over' : 'side'" [opened]="!isOver()">
-      <mat-nav-list class="navigation accordion">
-        <mat-list-item class="accordion-link" *ngFor="let menuitem of menuItems.getAll()" group="{{menuitem.state}}">
+  <mat-sidenav-container class="app-inner" style="background-color: lightblue;">
+    <mat-sidenav #sidemenu class="sidebar-panel" [mode]="isOver() ? 'over' : 'side'" [opened]="!isOver()" style="background-color: lightpink;">
+      <mat-nav-list class="navigation accordion" style="background-color: lightgreen;">
+        <mat-list-item class="accordion-link" *ngFor="let menuitem of menuItems.getAll()" group="{{menuitem.state}}" style="background-color: lightsalmon;">
           <a class="accordion-toggle relative" mat-ripple [routerLink]="['/', menuitem.state]" *ngIf="menuitem.type === 'link'">
             <mat-icon>{{ menuitem.icon }}</mat-icon>
             <span>{{ menuitem.name | translate }}</span>
@@ -79,13 +79,6 @@
           </mat-nav-list>
         </mat-list-item>
         <mat-divider></mat-divider>
-
-        <!--<mat-list-item>
-          <a (click)="addMenuItem()">
-            <mat-icon>add</mat-icon>
-            <span>Add</span>
-          </a>
-        </mat-list-item>-->
 
       </mat-nav-list>
     </mat-sidenav>
