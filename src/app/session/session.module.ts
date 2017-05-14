@@ -12,10 +12,11 @@ import { ForgotComponent } from './forgot/forgot.component';
 import { LockscreenComponent } from './lockscreen/lockscreen.component';
 import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
+import { SessionComponent } from './session.component';
 
 @NgModule({
   imports: [CommonModule, RouterModule.forChild(SessionRoutes), MdIconModule, MdCardModule, MdInputModule, MdCheckboxModule, MdButtonModule, FlexLayoutModule, FormsModule, ReactiveFormsModule],
-  declarations: [NotFoundComponent, ErrorComponent, ForgotComponent, LockscreenComponent, SigninComponent, SignupComponent]
+  declarations: [NotFoundComponent, ErrorComponent, ForgotComponent, LockscreenComponent, SigninComponent, SignupComponent, SessionComponent]
 })
 
 export class SessionModule {}
